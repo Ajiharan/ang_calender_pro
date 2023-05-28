@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ApiService } from './services/api.service';
 import { TaskDialogComponent } from './task-dialog/task-dialog.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -44,7 +45,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.ref.onClose.subscribe((data: any) => {
       if (typeof data === 'boolean') {
-        console.log('data', data);
+        // console.log('data', data);
         this.initTable();
       }
 
