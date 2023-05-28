@@ -60,7 +60,7 @@ export class TaskDialogComponent {
     this.apiService.getEndDate(
       {
         startDate: date,
-        noOfDaya: parseInt(this.taskForm.get('noOfDays')?.value || '0'),
+        noOfDays: parseInt(this.taskForm.get('noOfDays')?.value || '0'),
       },
       this.dateUpdate
     );
@@ -76,7 +76,7 @@ export class TaskDialogComponent {
     this.apiService.getEndDate(
       {
         startDate: date,
-        noOfDaya: parseInt(this.taskForm.get('noOfDays')?.value || '0'),
+        noOfDays: parseInt(this.taskForm.get('noOfDays')?.value || '0'),
       },
       this.dateUpdate
     );

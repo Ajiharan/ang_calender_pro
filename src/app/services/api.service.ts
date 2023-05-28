@@ -27,7 +27,7 @@ export class ApiService {
   }
 
   getEndDate(
-    body: { startDate: string; noOfDaya: number },
+    body: { startDate: string; noOfDays: number },
     func: (result?: any) => void
   ): void {
     this.http.post(`${this.baseUrl}/endDatePrediction/create`, body).subscribe({
